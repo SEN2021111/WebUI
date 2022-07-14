@@ -1,0 +1,22 @@
+{
+  "255dd1c24ad1db2402d3b6cee94b2f8b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8feb99ba9a96a36a",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@rel='layered_id_attribute_group_2']' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1657798421950,
+        "stop" : 1657798446412,
+        "duration" : 24462
+      }
+    } ]
+  }
+}

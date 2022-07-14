@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Lesson6",
+    "children" : [ {
+      "name" : "chooseSizeM()",
+      "uid" : "8feb99ba9a96a36a",
+      "parentUid" : "3e2117cf6098db238bf36c8faa582bb1",
+      "status" : "broken",
+      "time" : {
+        "start" : 1657798421950,
+        "stop" : 1657798446412,
+        "duration" : 24462
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3e2117cf6098db238bf36c8faa582bb1"
+  } ]
+}
