@@ -1,6 +1,7 @@
 package Lesson6;
 
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,13 +27,14 @@ public class WomenPage extends PageForHW{
     @FindBy(xpath = "//a[@rel='layered_id_attribute_group_2']")
     private WebElement chosenSize;
 
-
+    @Step("Выбрать размер")
     public WomenPage chooseSize(String size) {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(SUCCESS_MESSAGE_XPATH_LOCATOR)));
         sizes.stream().filter(s -> s.getText().contains(size)).findFirst().get().click();
         return this;
     }
 
+    @Step("Отмена выбора размера")
     public WomenPage cancelChosenSize() {
         webDriverWait.until(ExpectedConditions.visibilityOf(chosenSize));
         actions.click(chosenSize)
